@@ -1,5 +1,4 @@
 use super::{NodeId, NodeRecord};
-use arrayvec::ArrayVec;
 use bytes::BufMut;
 use derive_more::*;
 use ethereum_types::H256;
@@ -71,8 +70,7 @@ pub struct FindNodeMessage {
 
 #[derive(Clone, Debug, Encodable, Decodable)]
 pub struct NeighboursMessage {
-    // pub nodes: Vec<NodeRecord>,
-    pub nodes: ArrayVec<NodeRecord, 0>,
+    pub nodes: Vec<NodeRecord>,
     pub expire: u64,
 }
 

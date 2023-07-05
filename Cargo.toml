@@ -28,7 +28,7 @@ enr = { version = "0.8.1", features = ["rust-secp256k1"] }
 secp256k1 = { version = "0.27.0", features = [ "global-context", "rand-std", "recovery" ] }
 enum-primitive-derive = "0.2.2"
 ethereum-types = "0.14.1"
-fastrlp = { version = "0.3.1", features = [ "derive", "ethereum-types", "std" ] } # 0.2.0
+fastrlp = { version = "0.3.1", features = [ "derive", "ethereum-types", "std" ] }
 futures = "0.3.28"
 generic-array = "0.14.7"
 hex = "0.4.3"
